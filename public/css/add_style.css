@@ -37,3 +37,17 @@ ul{
   background-size: cover;
   background-position: center 60%;
 }
+
+.jumbotron-extend {
+    position: relative;
+    height: 100vh;
+    min-height: 300px;
+    max-height:400px;
+    background-size: cover;
+}
+
+.jumbotron-container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
