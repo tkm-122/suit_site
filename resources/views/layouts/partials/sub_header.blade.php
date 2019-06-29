@@ -13,7 +13,7 @@
         aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo">
+      <div class="text-right collapse navbar-collapse" id="navbarTogglerDemo">
         <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
           <li class="nav-item mr-4 mb-2 mb-lg-0">
             <a class="nav-link" href="{{action('PagesController@index')}}">Home</a>
@@ -38,7 +38,7 @@
 
 
         @else
-        <div class="ml-auto my-2 my-lg-0 pr-2">
+        <div class=" my-2 my-lg-0 pr-2">
           <a class="btn btn-secondary" href="{{route('user.signin')}}">ログイン</a>
         </div>
 

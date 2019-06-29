@@ -32,3 +32,8 @@ ul{
   padding-left: 0; /* デフォルトのスタイルシート削除用 */
   list-style: none;
 }
+
+.jumbotron {
+  background-size: cover;
+  background-position: center 60%;
+}

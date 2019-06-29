@@ -2,45 +2,44 @@
 @section('title', 'Home')
 @section('header')
 <!-- Promo Block -->
-<section class="js-parallax u-promo-block u-overlay u-overlay--dark text-white img-responsive" style="background-image: url({{ url('/') }}/img/pages/toppage3.jpg); background-position: 50% 0px;">
-  <!-- Promo Content -->
-  <div class="container u-overlay__inner u-ver-center">
-    <div class="row justify-content-center">
-      <div class="col-12">
-        <div class="text-center">
-          <p class="text-uppercase u-letter-spacing-sm mb-0">Cool and Comfortable Suit Creator</p>
-          <h2 class="display-sm-4 display-lg-3 mb-3">We are <span class="js-display-typing"></span></h2>
+<section>
+  <div class="jumbotron jumbotron-fluid js-parallax u-promo-block u-overlay u-overlay--dark text-white img-responsive" style="background-image: url({{ url('/') }}/img/pages/toppage3.jpg);">
+    <div class="container u-overlay__inner u-ver-center">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="text-center">
+            <p class="text-uppercase u-letter-spacing-sm mb-0">Cool and Comfortable Suit Creator</p>
+            <h2 class="display-sm-4 display-lg-3 mb-3">We are <span class="js-display-typing"></span></h2>
+          </div>
+        </div>
+        <div class="col-md-4 align-self-center mb-5">
+          <ul class="list-inline text-center text-md-center mb-0">
+            <li class="list-inline-item mx-2" data-toggle="tooltip" data-placement="top" title="Facebook">
+              <a class="text-white" target="_blank" href="#">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li class="list-inline-item mx-2" data-toggle="tooltip" data-placement="top" title="Instagram">
+              <a class="text-white" target="_blank" href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="list-inline-item mx-2" data-toggle="tooltip" data-placement="top" title="Twitter">
+              <a class="text-white" target="_blank" href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item mx-2" data-toggle="tooltip" data-placement="top" title="Dribbble">
+              <a class="text-white" target="_blank" href="#">
+                <i class="fab fa-dribbble"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="col-md-4 align-self-center mb-5">
-        <ul class="list-inline text-center text-md-center mb-0">
-          <li class="list-inline-item mx-2" data-toggle="tooltip" data-placement="top" title="Facebook">
-            <a class="text-white" target="_blank" href="#">
-              <i class="fab fa-facebook"></i>
-            </a>
-          </li>
-          <li class="list-inline-item mx-2" data-toggle="tooltip" data-placement="top" title="Instagram">
-            <a class="text-white" target="_blank" href="#">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-          <li class="list-inline-item mx-2" data-toggle="tooltip" data-placement="top" title="Twitter">
-            <a class="text-white" target="_blank" href="#">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li class="list-inline-item mx-2" data-toggle="tooltip" data-placement="top" title="Dribbble">
-            <a class="text-white" target="_blank" href="#">
-              <i class="fab fa-dribbble"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <!-- End Promo Content -->
+    </div><!-- /.container -->
+  </div><!-- /.jumbotron -->
 </section>
-<!-- End Promo Block -->
 @endsection
 
 @section('content')
@@ -58,7 +57,7 @@
 <section class="">
   <div class="container">
     <header class="text-center">
-      <h4 class="display-5 mb-5">メンズスーツ一覧</h4>
+      <h4 class=" mb-5">メンズスーツ一覧</h4>
     </header>
     <div class="row">
       @foreach($items as $item)
