@@ -1,21 +1,24 @@
 @extends('layouts.layout')
 @section('title', 'Product')
 @section('header')
-<section class="js-parallax u-promo-block u-overlay u-overlay--dark text-white img-responsive" style="background-image: url({{ url('/') }}/img/pages/business1.jpg); background-position: 50% 0px;">
-  <!-- Promo Content -->
-  <div class="container u-overlay__inner u-ver-center">
-    <div class="row justify-content-center">
-      <div class="col-12">
-        <div class="text-center">
-          <h1 class="display-sm-4 display-lg-3">Business Partnership</h1>
-          <!-- <p class="h6 text-uppercase u-letter-spacing-sm mb-0">広告や記事を転載してくださる企業様募集中。</p> -->
+<!-- Promo Block -->
+<section>
+  <div class="jumbotron jumbotron-extend js-parallax u-promo-block u-overlay u-overlay--dark text-white img-responsive" style="background-image: url({{ url('/') }}/img/pages/business1.jpg);">
+    <div class="container-fluid jumbotron-container u-overlay__inner u-ver-center">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="text-center">
+            <h1 class="display-sm-4 display-lg-3">Business Partnership</h1>
+            <!-- <p class="h6 text-uppercase u-letter-spacing-sm mb-0">広告や記事を転載してくださる企業様募集中。</p> -->
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-  <!-- End Promo Content -->
+    </div><!-- /.container -->
+  </div><!-- /.jumbotron -->
 </section>
-<!-- End Promo Block -->
+@endsection
+
+@section('content')
 <section class="py-5">
   <div class="container">
     <header class="text-center mx-auto mb-8">
